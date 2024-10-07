@@ -1,0 +1,14 @@
+body{
+    background-color: #217FA4;
+}
+.div-card{
+    max-width: 383px;
+    min-height: 598px;
+    border: 2px solid #419CBF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+    background-color: #419CBF;
+}
