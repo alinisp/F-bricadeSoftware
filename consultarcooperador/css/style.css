@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #217FA4;
+}
+#menuBar {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #053d63;
+}
+.cons{
+    background-color: #004777;
+    border-radius: 15px;
+    max-width: 15%;
+    text-align: center;
+    margin-left: 100px;
+    min-height: 40px;
+}
