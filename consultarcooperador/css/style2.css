@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #217FA4;
+}
+#menuBar {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #053d63;
+}
+.cons{
+    background-color: #053d63;
+    border-radius: 15px;
+    max-width: 20%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-left: 100px;
+    min-height: 60px;
+}
+#nome{
+    max-width: 25%;
+    min-height: 30px;
+    border-radius: 10px;
+    margin-top: 1px;
+    margin-left: 37%;
+}
