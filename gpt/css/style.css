@@ -1,27 +1,76 @@
 
 body {
-    background-color: #002366;
-    color: white;
     font-family: Arial, sans-serif;
+    background-color: #033649;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
 }
+
 .container {
+    background-color: #027B96;
+    width: 800px;
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+}
+
+.header {
+    font-size: 24px;
+    margin-bottom: 20px;
     text-align: center;
 }
+
 .search-bar {
-    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
-input[type="text"] {
-    padding: 10px;
+
+.search-bar input[type="text"] {
     width: 300px;
+    padding: 8px;
+    border-radius: 4px 0 0 4px;
     border: none;
-    border-radius: 5px;
+    outline: none;
 }
-.search-icon {
-    position: relative;
-    left: -30px;
+
+.search-bar button {
+    padding: 8px 12px;
+    background-color: #004D5A;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info {
+    width: 60%;
+    background-color: #56B1BF;
+    padding: 20px;
+    border-radius: 8px;
+    color: black;
+}
+
+.info p {
+    margin: 8px 0;
+}
+
+.profile-image {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image img {
+    max-width: 100%;
+    border-radius: 8px;
 }
