@@ -11,7 +11,8 @@ document.addEventListener('DOMContentLoaded', function () {
         top: '0',
         left: '0',
         right: '0',
-        boxSizing: 'border-box'
+        boxSizing: 'border-box',
+
     });
 
     Object.assign(menuIcon.style, {
@@ -82,13 +83,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const menulat = [
         { nome: 'Conta', url: 'conta.html' },
-        { nome: 'Configurações', url: 'config.html' },
+        { nome: 'Configurações', url: 'Config.html' },
         { nome: 'Requerimentos', url: 'req.html' }
     ];
 
     let nameTi = document.createElement('h1');
-    let txtname = document.createTextNode('Fulano Medeiros da Silva de oliveira');
+    let txtname = document.createTextNode('Fulano Da silva Parreiras');
     Object.assign(nameTi.style, {
+        color:'white',
         height: '80px',
         fontSize: '18px',
         marginTop: '-45px',
