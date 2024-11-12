@@ -5,27 +5,26 @@
     font-family: Arial, sans-serif;
 }
 body {
-    display: flex;
     flex-direction: column;
     gap: 20px;
     background-color: #217FA4;
+}
+h1{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 50px;
+    margin-left: 60px;
 }
 #menuBar {
     display: flex;
     justify-content: center;
     padding: 10px;
-    background-color: #053d63;
 }
 .cons{
-    background-color: #053d63;
-    border-radius: 15px;
-    max-width: 20%;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    margin-left: 100px;
-    min-height: 60px;
+    margin-top: 0px;
+    background-color: #00435D;
+    min-height: 45px;
+    text-align: left;
 }
 #nome{
     max-width: 25%;
@@ -38,18 +37,19 @@ body {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .search-bar input[type="text"] {
     width: 300px;
-    padding: 8px;
+    padding: 10px;
     border-radius: 4px 0 0 4px;
     border: none;
     outline: none;
 }
 
 .search-bar button {
-    padding: 8px 12px;
+    padding: 15px 12px;
     background-color: #004D5A;
     color: white;
     border: none;
