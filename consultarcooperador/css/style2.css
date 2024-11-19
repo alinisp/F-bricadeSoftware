@@ -52,17 +52,19 @@ h1{
     cursor: pointer;
     border-radius: 0 4px 4px 0;
 }
-.content {
-    display: flex;
+.content{
+    margin-left: 500px;
     justify-content: center;
-
+    align-items: center;
 }
+
 .info {
     width: 60%;
     background-color: #2997c2;
     padding: 20px;
     border-radius: 8px;
     color: black;
+    justify-content: center;
 }
 .info p {
     margin: 8px 0;
