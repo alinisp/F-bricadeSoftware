@@ -1,17 +1,22 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const divcard = document.querySelectorAll('.miniatura');
-    const imgAmpliada = document.getElementById('imgAmpliada');
+function openModal(title, description, date, time, location) {
+    document.getElementById("modal-title").innerText = title;
+    document.getElementById("modal-description").innerText = description;
+    document.getElementById("modal-date").innerText = date;
+    document.getElementById("modal-time").innerText = time;
+    document.getElementById("modal-location").innerText = location;
 
-    divcard.forEach(function(miniatura) {
-      miniatura.addEventListener('click', function() {
-        imgAmpliada.src = this.src;
-        imgAmpliada.style.display = 'block';
-        this.style.opacity = '1';
-        divcard.forEach(function(outro) {
-          if (outro !== miniatura) {
-            outro.style.opacity = '0.4';
-        }
-      });
-    });
-  });
-});                 
+    const modal = document.getElementById("modal");
+    modal.style.display = "flex";
+}
+
+function closeModal() {
+    const modal = document.getElementById("modal");
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    const modal = document.getElementById("modal");
+    if (event.target === modal) {
+        closeModal();
+    }
+}
