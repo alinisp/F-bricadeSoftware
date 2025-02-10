@@ -1,19 +1,41 @@
-// import Image from "next/image";
-import styles from "./page.module.css";
-import Image from "next/image";
+"use client"; 
+import React, { useState } from "react";
+import styles from "./page.module.css"; 
 
-export default function Home() {
-  const nome = 'Alini'
+function ConsultarCooperador() {
+  const [searchTerm, setSearchTerm] = useState("");
+  const [results, setResults] = useState([]);
+
+  const handleSearch = async () => {
+    // Aqui você deve fazer a chamada para o seu banco de dados
+    // Exemplo de chamada a uma API fictícia
+    const response = await fetch(`/api/search?query=${searchTerm}`);
+    const data = await response.json();
+    setResults(data);
+  };
+
   return (
-    <div>
-      <h1>Página Principal</h1>
-      <p>Parágrafo da página principal</p>
-      <p>Autor: {nome}</p>
-      <Image 
-        className={styles.imagem}
-        src="/images/pin.jpg" alt="Imagem de pinguins"
-        width={600} 
-        height={400} />
+    <div className={styles.container}>
+      <h1 className={styles.h1}>Consultar</h1>
+      <div className={styles.searchBar}>
+        <input 
+          type="text" 
+          placeholder="Consultar" 
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          className={styles.input}
+        />
+        <button onClick={handleSearch} className={styles.button}>🔍</button>
+      </div>
+      <div className={styles.results}>
+        {results.map((result, index) => (
+          <div key={index} className={styles.resultItem}>
+            {result.name} {/* Ajuste conforme a estrutura do seu dado */}
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
+
+export default ConsultarCooperador;

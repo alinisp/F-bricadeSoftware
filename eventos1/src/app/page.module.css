@@ -1,0 +1,19 @@
+.container {
+  background-color: #217fa4;
+  font-family: "Aoboshi One", sans-serif;
+  height: 100vh;
+}
+
+.h1 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  color: white;
+  background-color: #295f74;
+  border-radius: 20px;
+  width: 300px;
+  height: 10%;
+  margin-left: 40%;
+}
