@@ -89,13 +89,11 @@
     width: 45%;
   }
 }
-
 @media (min-width: 900px) {
   .divCard {
     width: 30%;
   }
 }
-
 .modal {
   display: flex;
   position: fixed;
