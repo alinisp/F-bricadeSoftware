@@ -24,7 +24,7 @@ function Eventos() {
   return (
     <div className={styles.body}>
       <div className={styles.eve}>
-        <h1>Eventos</h1>
+        <h1 className={styles.agaum}>Eventos</h1>
       </div>
 
       <div className={styles.divCards}>
@@ -43,8 +43,8 @@ function Eventos() {
           <a href="#">
             <img className={styles.imgNh} src="/evet.jpg" alt="imagem aqui" />
           </a>
-          <h3>Evento 1</h3>
-          <p>Eventos Eventos Eventos Eventos</p>
+          <h3 className={styles.h3}>Evento 1</h3>
+          <p className={styles.para}>Eventos Eventos Eventos Eventos</p>
         </div>
 
         <div
@@ -62,8 +62,8 @@ function Eventos() {
           <a href="#">
             <img className={styles.imgNh} src="/evet.jpg" alt="imagem aqui" />
           </a>
-          <h3>Evento 2</h3>
-          <p>Eventos Eventos Eventos Eventos</p>
+          <h3 className={styles.h3}>Evento 2</h3>
+          <p className={styles.para}>Eventos Eventos Eventos Eventos</p>
         </div>
 
         <div
@@ -81,8 +81,8 @@ function Eventos() {
           <a href="#">
             <img className={styles.imgNh} src="/evet.jpg" alt="imagem aqui" />
           </a>
-          <h3>Evento 3</h3>
-          <p>Eventos Eventos Eventos Eventos</p>
+          <h3 className={styles.h3}>Evento 3</h3>
+          <p className={styles.para}>Eventos Eventos Eventos Eventos</p>
         </div>
       </div>
 
